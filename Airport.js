@@ -1,11 +1,14 @@
+const Plane = require("./Plane");
+const Bag = require("./Bag");
+
 class Airport {
 	constructor(name) {
 		this.name = name
-		this.planes = //what would be the best datatype?
+		this.planes = Array()
 	}
 
 	addPlane(plane) {
-		//use an array method
+		this.planes.push(plane);
 	}
 }
 

@@ -1,9 +1,11 @@
+const Person = require("./Person")
+
 class Plane {
     constructor(name){
         this.name = name
         this.origin = ''
         this.destination = ''
-        this.passengers = []
+        this.passengers = Array()
     }
 
     setOrigin(origin) {
@@ -15,8 +17,8 @@ class Plane {
     }
 
     addPassenger(passenger) {
-        this.passengers.push(passenger)
+        this.passengers.push(passenger);
     }
 }
 
-module.exports = Plane
+module.exports = Plane;
